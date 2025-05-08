@@ -6,3 +6,6 @@ backup file:
 
 get file:
   rclone copy "secret:{{file}}" "{{file}}" --progress
+
+rm file:
+  rclone delete "secret:{{file}}"
